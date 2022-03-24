@@ -17,7 +17,7 @@ struct BookList : Hashable, Codable {
 class ViewModel : ObservableObject {
     
     @Published var books : [BookList] = []
-    @Published var filteredArray : [BookList] = []
+    @Published var filteredBooks : [BookList] = []
 
     func fetch() {
         guard let url = URL(string: "https://training.xcelvations.com/data/books.json") else{
@@ -31,11 +31,11 @@ class ViewModel : ObservableObject {
             
             //convert to JSON
             do {
-                let books = try JSONDecoder().decode([BookList].self, from: data)
+                var books = try JSONDecoder().decode([BookList].self, from: data)
                 
                 DispatchQueue.main.async {
+                    books = books.sorted{ $0.title < $1.title }
                     self?.books = books
-                    self?.updateSortedArray()
                 }
             }
             
@@ -44,12 +44,5 @@ class ViewModel : ObservableObject {
             }
         }
         task.resume()
-    }
-    
-    func updateSortedArray()
-    {
-        filteredArray = books.sorted { (user1, user2) -> Bool in
-            return user1.title < user2.title
-        }
     }
 }

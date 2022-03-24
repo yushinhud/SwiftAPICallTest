@@ -35,9 +35,9 @@ struct ContentView: View {
     
     var searchResults: [BookList] {
            if searchText.isEmpty {
-               return viewModel.filteredArray
+               return viewModel.books
            } else {
-               return viewModel.filteredArray.filter { $0.title.contains(searchText) }
+               return viewModel.books.filter { $0.title.contains(searchText) }
            }
        }
 }
