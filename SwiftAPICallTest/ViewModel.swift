@@ -17,7 +17,6 @@ struct BookList : Hashable, Codable {
 class ViewModel : ObservableObject {
     
     @Published var books : [BookList] = []
-    @Published var filteredBooks : [BookList] = []
 
     func fetch() {
         guard let url = URL(string: "https://training.xcelvations.com/data/books.json") else{
