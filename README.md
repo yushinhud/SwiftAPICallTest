@@ -4,9 +4,9 @@
 
 Training 
 
--SwiftUI API Call with JSON
--Display Table view
--Sorting and Searching function
--detailed view(second screen)
--MVVM design pattern
+* SwiftUI API Call with JSON
+* Display Table view
+* Sorting and Searching function
+* detailed view(second screen)
+* MVVM design pattern
 
