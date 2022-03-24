@@ -24,7 +24,7 @@ class ViewModel : ObservableObject {
             return
         }
         
-        let task = URLSession.shared.dataTask(with:url) { data, _, error in
+        let task = URLSession.shared.dataTask(with:url) { [weak self] data, _, error in
             guard let data = data, error == nil else {
                 return
             }
@@ -34,10 +34,11 @@ class ViewModel : ObservableObject {
                 let books = try JSONDecoder().decode([BookList].self, from: data)
                 
                 DispatchQueue.main.async {
-                    self.books = books
-                    self.updateSortedArray()
+                    self?.books = books
+                    self?.updateSortedArray()
                 }
             }
+            
             catch{
                 print(error)
             }

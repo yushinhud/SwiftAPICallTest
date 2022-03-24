@@ -21,12 +21,12 @@ struct ContentView: View {
                             Text(book.title)
                                 .bold()
                         }
-                        .padding(3)
+                        .padding(10)
                     })
                 }
             }
             .searchable(text: $searchText)
-            .navigationTitle("Books List")
+            .navigationTitle("Books")
             .onAppear {
                 viewModel.fetch()
             }
@@ -40,8 +40,6 @@ struct ContentView: View {
                return viewModel.filteredArray.filter { $0.title.contains(searchText) }
            }
        }
-
-    
 }
 
 struct ContentView_Previews: PreviewProvider {
