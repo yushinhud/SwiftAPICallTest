@@ -21,7 +21,7 @@ Updates
 
   * Why you use your viewmodel is stateobject ?
     * I think I used “StateObject” because it does not depend on View’s lifecycle. in other words, it doesn’t create again when the View is newly created. 
-It means that It can solve the problem of data loss, and this can prevent inefficient performance if there is a lot of work when the ViewModel is created. 
+So It can solve the problem of data loss, and this can prevent inefficient performance if there is a lot of work when the ViewModel is created. 
 But, I also found out that “@ObservedObject” is a property wrapper for the most of ViewModel declarations. So I changed it from @StateObject to @ObservedObject.
 
   * Instead of passing book object like this can you environment object ? 
