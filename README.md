@@ -15,6 +15,7 @@ Training
 Updates
 
 * changed from @StateObject to @ObservedObject.
+* maked folders
 * removed PersistenceController
 
 * replys for the questions.
