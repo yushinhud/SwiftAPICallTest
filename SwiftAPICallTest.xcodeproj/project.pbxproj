@@ -11,8 +11,6 @@
 		05A183E227EBE473003B6896 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A183E127EBE473003B6896 /* ContentView.swift */; };
 		05A183E427EBE476003B6896 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05A183E327EBE476003B6896 /* Assets.xcassets */; };
 		05A183E727EBE476003B6896 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05A183E627EBE476003B6896 /* Preview Assets.xcassets */; };
-		05A183E927EBE476003B6896 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A183E827EBE476003B6896 /* Persistence.swift */; };
-		05A183EC27EBE476003B6896 /* SwiftAPICallTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 05A183EA27EBE476003B6896 /* SwiftAPICallTest.xcdatamodeld */; };
 		05A183F327EBF856003B6896 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A183F227EBF856003B6896 /* ViewModel.swift */; };
 		05A183F527EC0407003B6896 /* BookDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A183F427EC0407003B6896 /* BookDetailView.swift */; };
 /* End PBXBuildFile section */
@@ -23,8 +21,6 @@
 		05A183E127EBE473003B6896 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		05A183E327EBE476003B6896 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		05A183E627EBE476003B6896 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		05A183E827EBE476003B6896 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
-		05A183EB27EBE476003B6896 /* SwiftAPICallTest.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SwiftAPICallTest.xcdatamodel; sourceTree = "<group>"; };
 		05A183F227EBF856003B6896 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		05A183F427EC0407003B6896 /* BookDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -61,8 +57,6 @@
 			children = (
 				05A183DF27EBE473003B6896 /* SwiftAPICallTestApp.swift */,
 				05A183E327EBE476003B6896 /* Assets.xcassets */,
-				05A183E827EBE476003B6896 /* Persistence.swift */,
-				05A183EA27EBE476003B6896 /* SwiftAPICallTest.xcdatamodeld */,
 				05A183E527EBE476003B6896 /* Preview Content */,
 				05A183E127EBE473003B6896 /* ContentView.swift */,
 				05A183F227EBF856003B6896 /* ViewModel.swift */,
@@ -150,8 +144,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				05A183F327EBF856003B6896 /* ViewModel.swift in Sources */,
-				05A183EC27EBE476003B6896 /* SwiftAPICallTest.xcdatamodeld in Sources */,
-				05A183E927EBE476003B6896 /* Persistence.swift in Sources */,
 				05A183E227EBE473003B6896 /* ContentView.swift in Sources */,
 				05A183F527EC0407003B6896 /* BookDetailView.swift in Sources */,
 				05A183E027EBE473003B6896 /* SwiftAPICallTestApp.swift in Sources */,
@@ -355,19 +347,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		05A183EA27EBE476003B6896 /* SwiftAPICallTest.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				05A183EB27EBE476003B6896 /* SwiftAPICallTest.xcdatamodel */,
-			);
-			currentVersion = 05A183EB27EBE476003B6896 /* SwiftAPICallTest.xcdatamodel */;
-			path = SwiftAPICallTest.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 05A183D427EBE473003B6896 /* Project object */;
 }

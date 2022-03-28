@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @StateObject var viewModel = ViewModel()
+    @ObservedObject var viewModel = ViewModel()
     @State var searchText = ""
     
     var body: some View {
